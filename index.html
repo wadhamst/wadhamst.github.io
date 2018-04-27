@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Heavily inspired by the wonderful Vadim Hermann-->
+    <meta charset="UTF-8">
+    <title>Thomas Wadhams</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="cubesite.css">
+    <script>
+        function openNavWeb() {
+            document.getElementById("window").style.height = "70vh";
+            document.getElementById("webport").style.display = "inline";
+        }
+        function openNavProg() {
+            document.getElementById("window").style.height = "70vh";
+            document.getElementById("progport").style.display = "inline";
+        }
+        function openNavNet() {
+            document.getElementById("window").style.height = "70vh";
+            document.getElementById("netport").style.display = "inline";
+        }
+        function openHist() {
+            document.getElementById("window").style.height = "70vh";
+            document.getElementById("hist").style.display = "inline";
+        }
+        function openBio() {
+            document.getElementById("window").style.height = "70vh";
+            document.getElementById("bio").style.display = "inline";
+        }
+        
+        function closeNav() {
+            document.getElementById("window").style.height = "0";
+            document.getElementById("webport").style.display = "none";
+            document.getElementById("progport").style.display = "none";
+            document.getElementById("netport").style.display = "none";
+            document.getElementById("hist").style.display = "none";
+            document.getElementById("bio").style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    
+    <div id="window" class="infowindow">
+        <div class="topbar" style="width: 100%; height: 20px; background-color: red; text-align: center; position: fixed; z-index: 950;">
+            <i id="closewindow" class="icon-chevron-down icon-3x" onclick="closeNav()"></i>
+            <div class="arrow-down"></div>
+        </div>
+        
+        <div id="webport" style="display: none; width: 100%;">
+            <div class="row" style="margin-top: 40px;">
+                <div class="col-md-3" style="text-align: center; float: left;">
+                    <img src="meghanslight.png" alt="Meghan's Light" style="height: 200px; margin-left: auto; margin-right: auto; margin-bottom: 5px;">
+                    <p id="portinfo" style="color: #970000; font-size: 25px;">Meghan's Light</p>
+                    <p id="portinfo" style="color: #d40000; font-size: 22px;">Web Content Manager</p>
+                    <p id="portinfo" style="color: black; font-size: 20px;"><a href="http://meghanslight.com/">meghanslight.com</a></p>
+                </div>
+                <div class="col-md-3" style="text-align: center; float: left;">
+                    <img src="elms.gif" alt="Elms College" style="height: 200px; width: 100%; margin-left: auto; margin-right: auto; margin-bottom: 5px;">
+                    <p id="portinfo" style="color: #970000; font-size: 25px;">Elms College</p>
+                    <p id="portinfo" style="color: #d40000; font-size: 22px;">Web Content Manager</p>
+                    <p id="portinfo" style="color: black; font-size: 20px;"><a href="https://www.elms.edu/">elms.edu</a></p>
+                </div>
+                <div class="col-md-3" style="text-align: center; float: left;">
+                    <img src="crest.png" alt="Murray Legal" style="height: 200px; margin-left: auto; margin-right: auto; margin-bottom: 5px;">
+                    <p id="portinfo" style="color: #970000; font-size: 25px;">Murray Legal</p>
+                    <p id="portinfo" style="color: #d40000; font-size: 22px;">Web Designer</p>
+                    <p id="portinfo" style="color: black; font-size: 20px;"><a href="http://www.cmmurraylaw.com/">cmmurraylaw.com</a></p>
+                </div>
+                <div class="col-md-3" style="text-align: center; float: left;"></div>
+            </div>
+        </div>
+        <div id="progport" style="display: none; width: 100%">
+            <div class="col-md-3" style="text-align: center; float: left;"></div>
+            <div class="col-md-3" style="text-align: center; float: left;"></div>
+            <div class="col-md-3" style="text-align: center; float: left;"></div>
+            <div class="col-md-3" style="text-align: center; float: left;"></div>
+        </div>
+        <div id="netport" style="display: none; width: 100%">
+            <div class="col-md-3" style="text-align: center; float: left;"></div>
+            <div class="col-md-3" style="text-align: center; float: left;"></div>
+            <div class="col-md-3" style="text-align: center; float: left;"></div>
+            <div class="col-md-3" style="text-align: center; float: left;"></div>
+        </div>
+        <div id="hist" style="display: none; width: 100%">
+            <div class="row" style="margin-top: 40px;">
+                <div class="col-md-6" style="text-align: center; float: left;">
+                    <div class="histcontainer">
+                        <img src="Placeholder.jpg" alt="Avatar" style="width:90px">
+                        <p><span>Elms College:</span> Bachelors in Computer Science (August 2015 - December 2018)</p>
+                        <p>Graduated with a Computer Science degree from Elms College.</p>
+                    </div>
+                </div>
+                <div class="col-md-6" style="text-align: center; float: left;">
+                    <div class="histcontainer">
+                        <img src="Placeholder.jpg" alt="Avatar" style="width:90px">
+                        <p><span>Elms College:</span> Computer Lab Monitor (August 2016 - December 2018)</p>
+                        <p>Worked as a lab monitor for the IT computer lab in the Lyons Center. Responsibilities included maintaining the computers, running updates, installing necessary programs, and debugging computer issues.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6" style="text-align: center; float: left;">
+                    <div class="histcontainer">
+                        <img src="Placeholder.jpg" alt="Avatar" style="width:90px">
+                        <p><span>Elms College:</span> Web Designer Intern (May 2017 - August 2017)</p>
+                        <p>Worked on several websites for nonprofit organizations and other clients. Other responsibilities included installing new computers in the lab, running updates, and working with others to create clean responsive sites.</p>
+                    </div>
+                </div>
+                <div class="col-md-6" style="text-align: center; float: left;">
+                    <div class="histcontainer">
+                        <img src="Placeholder.jpg" alt="Avatar" style="width:90px">
+                        <p><span>Elms College:</span> Web Content Manager Intern (June 2017 - August 2017)</p>
+                        <p>Worked on the Elms College website, reorganizing and updating information, as well as making the site more responsive.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6" style="text-align: center; float: left;">
+                    <div class="histcontainer">
+                        <img src="Placeholder.jpg" alt="Avatar" style="width:90px">
+                        <p><span>Meghan's Light:</span> Web Content Manager (June 2017 - Current)</p>
+                        <p>Meghan’s Light is a charity organization that raises awareness for Cystic Fibrosis. I manage the content on their website whenever new events or news come up. Hosted with Wordpress.</p>
+                    </div>
+                </div>
+                <div class="col-md-6" style="text-align: center; float: left;">
+                </div>
+            </div>
+        </div>
+        <div id="bio" style="display: none; width: 100%">
+            <div class="row" style="margin-top: 60px;">
+                <div class="col-md-4" style="text-align: center; float: left;">
+                    <img src="Placeholder.jpg" style="display: block; height: 400px; margin: auto;">
+                </div>
+                <div class="col-md-8" style="text-align: center; float: left;">
+                    <h1>Who am I?</h1>
+                    <p id="biobody">An aspriring web designer, programmer, network administrator, system administrator. I am all of these things. I believe in a well-rounded philosophy when it comes to my education and skills. I primarily specialize in network administration and web design.</p>
+                    <p id="biobody">I am incredibly felxible and I enjoy learning new skills that I can use in my field of work. I am currently working as an independent web designer and content manager while I finish my Computer Science degree at Elms College.</p>
+                    <p id="biobody">If you would like to contact me, head on over to the contact page for popular social media sites. Or you can email me at:</p>
+                    <p id="biobody">wadhams.tom@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <nav id="nav" role='navigation'>
+
+        <ul id="cube">
+            <li class="side">
+                <ul>
+                    <li></li>
+                    <li class="contact"><i class="icon-comments-alt icon-2x"></i><span>Social</span></li>
+                    <li></li>
+                    <li class="about"><i class="icon-user icon-2x"></i><span>About</span></li>
+                    <li></li>
+                    <li class="port"><i class="icon-folder-open icon-2x"></i><span>Portfolio</span></li>
+                    <li></li>
+                    <li class="exp"><i class="icon-asterisk icon-2x"></i><span>Experience</span></li>
+                </ul>  
+            </li>
+            <li class="side">
+                <ul>
+                    <li><i class="icon-chevron-left icon-2x"></i><span>Back</span></li>
+                    <li class="port"><h3>Portfolio</h3></li>
+                    <li class="port"></li>
+                    <li class="port" onclick="openNavWeb()"><i class="icon-desktop icon-2x"></i><span>Web</span></li>
+                    <li class="port" onclick="openNavProg()"><i class="icon-file-alt icon-2x"></i><span>Programs</span></li>
+                    <li class="port" onclick="openNavNet()"><i class="icon-sitemap icon-2x"></i><span>Networks</span></li>
+                    <li class="port"></li>
+                    <li class="port"></li>
+                    <li class="port"></li>
+                </ul>  
+            </li>
+            <li class="side">
+                  
+            </li>
+            <li class="side">
+                <ul>
+                    <li class="about"></li>
+                    <li class="about"><h3>About</h3></li>
+                    <li class="about"></li>
+                    <li class="about" onclick="openHist()"><i class="icon-book icon-2x"></i><span>History</span></li>
+                    <li class="about"><i class="icon-group icon-2x" onclick="openBio()"></i><span>Bio</span></li>
+                    <li><i class="icon-chevron-right icon-2x"></i><span>Home</span></li>
+                    <li class="about"></li>
+                    <li class="about"><a id="cubelink" href="https://docs.google.com/document/d/1U8-cvsHte7VTi0GL-kID_VZVqH9MGMaKNmwomiIaMGU/edit?usp=sharing" target="_blank"><i class="icon-file icon-2x"></i><span>Resume</span></a></li>
+                    <li class="about"></li>
+                </ul>
+            </li>
+            <li class="side">
+                <ul>
+                    <li class="exp"></li>
+                    <li><i class="icon-chevron-up icon-2x"></i><span>Back</span></li>
+                    <li class="exp"></li>
+                    <li class="exp"></li>
+                    <li class="exp"></li>
+                    <li class="exp"></li>
+                    <li class="exp"></li>
+                </ul>
+            </li>
+            <li class="side">
+                <ul>
+                    <li class="contact"></li>
+                    <li class="contact">
+                        <h3>Contact</h3>
+                        <h3 style="font-size: 13px;">wadhams.tom@gmail.com</h3>
+                    </li>
+                    <li class="contact"></li>
+                    <li class="contact"><a id="cubelink" href="https://github.com/wadhamst" target="_blank"><i class="icon-github-alt icon-2x"></i><span>Github</span></a></li>
+                    <li class="contact"><a id="cubelink" href="https://twitter.com/wadhams_tom" target="_blank"><i class="icon-twitter icon-2x"></i><span>Twitter</span></a></li>
+                    <li class="contact"><a id="cubelink" href="https://www.linkedin.com/in/thomas-wadhams-51a6b5158/" target="_blank"><i class="icon-linkedin icon-2x"></i><span>LinkedIn</span></a></li>
+                    <li class="contact"></li>
+                    <li><i class="icon-chevron-down icon-2x"></i><span>Back</span></li>
+                    <li class="contact"></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script  src="cube.js"></script>
+</body>
+</html>
