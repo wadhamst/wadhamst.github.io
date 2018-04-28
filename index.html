@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <link rel="stylesheet" href="cubesite.css">
     <script>
         function openNavWeb() {
@@ -38,11 +39,40 @@
             document.getElementById("hist").style.display = "none";
             document.getElementById("bio").style.display = "none";
         }
+
+        // When the user clicks the button, open the modal 
+        function openmodal() {
+            document.getElementById('myModal').style.display = "block";
+            document.getElementById("hiddenmodal").id = "showmodal";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        function closemodal() {
+            document.getElementById("showmodal").id = "hiddenmodal";
+            setTimeout(modalvanish, 1000);
+        }
+        
+        function modalvanish(){
+            document.getElementById('myModal').style.display = "none";
+        }
     </script>
 </head>
 <body>
     <div class="stars"></div>
     <div class="twinkling"></div>
+    
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+        <div class="modal-content" id="hiddenmodal">
+            <i class="fas fa-times icon-2x" onclick="closemodal()"></i>
+            <iframe allowTransparency="true" style="min-height:740px; height:inherit; overflow:auto;" width="100%" id="contactform123" name="contactform123" marginwidth="0" marginheight="0" frameborder="0" src="http://www.123formbuilder.com/my-contact-form-3681188.html">
+                <p>Your browser does not support iframes. The contact form cannot be displayed. Please use another contact method (phone, fax etc)</p>
+            </iframe>
+        </div>
+
+    </div>
     
     <div id="window" class="infowindow">
         <div class="topbar" style="width: 100%; height: 20px; background-color: red; text-align: center; position: fixed; z-index: 950;">
@@ -52,53 +82,53 @@
         
         <div id="webport" style="display: none; width: 100%;">
             <div class="row" style="margin-top: 60px; margin-right: 0px;">
-                <div class="col-md-3" style="text-align: center; float: left; padding-right: 0px;">
+                <div class="col-lg-3" style="text-align: center; float: left; padding-right: 0px;">
                     <img src="meghanslight.png" alt="Meghan's Light" style="height: 200px; margin-left: auto; margin-right: auto; margin-bottom: 5px;">
                     <p id="portinfo" style="color: #970000; font-size: 25px;">Meghan's Light</p>
                     <p id="portinfo" style="color: #d40000; font-size: 22px;">Web Content Manager</p>
                     <p id="portinfo" style="color: black; font-size: 20px;"><a href="http://meghanslight.com/">meghanslight.com</a></p>
                 </div>
-                <div class="col-md-3" style="text-align: center; float: left; padding-right: 0px;">
-                    <img src="elms.gif" alt="Elms College" style="height: 200px; width: 100%; margin-left: auto; margin-right: auto; margin-bottom: 5px;">
+                <div class="col-lg-3" style="text-align: center; float: left; padding-right: 0px;">
+                    <img src="elms.gif" alt="Elms College" style="height: 200px; width: 250px; margin-left: auto; margin-right: auto; margin-bottom: 5px;">
                     <p id="portinfo" style="color: #970000; font-size: 25px;">Elms College</p>
-                    <p id="portinfo" style="color: #d40000; font-size: 22px;">Web Content Manager</p>
+                    <p id="portinfo" style="color: #d40000; font-size: 22px;">Web Content Manager - Internship</p>
                     <p id="portinfo" style="color: black; font-size: 20px;"><a href="https://www.elms.edu/">elms.edu</a></p>
                 </div>
-                <div class="col-md-3" style="text-align: center; float: left; padding-right: 0px;">
+                <div class="col-lg-3" style="text-align: center; float: left; padding-right: 0px;">
                     <img src="crest.png" alt="Murray Legal" style="height: 200px; margin-left: auto; margin-right: auto; margin-bottom: 5px;">
                     <p id="portinfo" style="color: #970000; font-size: 25px;">Murray Legal</p>
-                    <p id="portinfo" style="color: #d40000; font-size: 22px;">Web Designer</p>
+                    <p id="portinfo" style="color: #d40000; font-size: 22px;">Web Designer - Internship</p>
                     <p id="portinfo" style="color: black; font-size: 20px;"><a href="http://www.cmmurraylaw.com/">cmmurraylaw.com</a></p>
                 </div>
-                <div class="col-md-3" style="text-align: center; float: left; padding-right: 0px;">
-                    <img src="Placeholder.jpg" alt="Placeholder" style="height: 200px; margin-left: auto; margin-right: auto; margin-bottom: 5px;">
-                    <p id="portinfo" style="color: #970000; font-size: 25px;">Placeholder</p>
-                    <p id="portinfo" style="color: #d40000; font-size: 22px;">Placeholder</p>
-                    <p id="portinfo" style="color: black; font-size: 20px;"><a href="">Placeholder Link</a></p>
+                <div class="col-lg-3" style="text-align: center; float: left; padding-right: 0px;">
+                    <img src="EClogoWeb.jpg" alt="Placeholder" style="height: 200px; margin-left: auto; margin-right: auto; margin-bottom: 5px;">
+                    <p id="portinfo" style="color: #970000; font-size: 25px;">Elms CIT Home Site</p>
+                    <p id="portinfo" style="color: #d40000; font-size: 22px;">Web Designer - Internship</p>
+                    <p id="portinfo" style="color: black; font-size: 20px;"><a href="http://elms.readyhosting.com/">elms.readyhosting.com</a></p>
                 </div>
             </div>
         </div>
         <div id="progport" style="display: none; width: 100%">
             <div class="row" style="margin-top: 60px; margin-right: 0px;">
-                <div class="col-md-3" style="text-align: center; float: left; padding-right: 0px;">
+                <div class="col-lg-3" style="text-align: center; float: left; padding-right: 0px;">
+                    <img src="voltorb.png" alt="VoltFlip" style="height: 200px; margin-left: auto; margin-right: auto; margin-bottom: 5px;">
+                    <p id="portinfo" style="color: #970000; font-size: 25px;">Voltorb Flip</p>
+                    <p id="portinfo" style="color: #d40000; font-size: 22px;">Javascript Programming Final</p>
+                    <p id="portinfo" style="color: black; font-size: 20px;"><a href="http://elms.readyhosting.com/classes/Web%20Programming/2017/Tom/voltorbflip.html">Click Here!</a></p>
+                </div>
+            <div class="col-lg-3" style="text-align: center; float: left; padding-right: 0px;">
                     <img src="Placeholder.jpg" alt="Placeholder" style="height: 200px; margin-left: auto; margin-right: auto; margin-bottom: 5px;">
                     <p id="portinfo" style="color: #970000; font-size: 25px;">Placeholder</p>
                     <p id="portinfo" style="color: #d40000; font-size: 22px;">Placeholder</p>
                     <p id="portinfo" style="color: black; font-size: 20px;"><a href="">Placeholder Link</a></p>
                 </div>
-            <div class="col-md-3" style="text-align: center; float: left; padding-right: 0px;">
+            <div class="col-lg-3" style="text-align: center; float: left; padding-right: 0px;">
                     <img src="Placeholder.jpg" alt="Placeholder" style="height: 200px; margin-left: auto; margin-right: auto; margin-bottom: 5px;">
                     <p id="portinfo" style="color: #970000; font-size: 25px;">Placeholder</p>
                     <p id="portinfo" style="color: #d40000; font-size: 22px;">Placeholder</p>
                     <p id="portinfo" style="color: black; font-size: 20px;"><a href="">Placeholder Link</a></p>
                 </div>
-            <div class="col-md-3" style="text-align: center; float: left; padding-right: 0px;">
-                    <img src="Placeholder.jpg" alt="Placeholder" style="height: 200px; margin-left: auto; margin-right: auto; margin-bottom: 5px;">
-                    <p id="portinfo" style="color: #970000; font-size: 25px;">Placeholder</p>
-                    <p id="portinfo" style="color: #d40000; font-size: 22px;">Placeholder</p>
-                    <p id="portinfo" style="color: black; font-size: 20px;"><a href="">Placeholder Link</a></p>
-                </div>
-            <div class="col-md-3" style="text-align: center; float: left; padding-right: 0px;">
+            <div class="col-lg-3" style="text-align: center; float: left; padding-right: 0px;">
                     <img src="Placeholder.jpg" alt="Placeholder" style="height: 200px; margin-left: auto; margin-right: auto; margin-bottom: 5px;">
                     <p id="portinfo" style="color: #970000; font-size: 25px;">Placeholder</p>
                     <p id="portinfo" style="color: #d40000; font-size: 22px;">Placeholder</p>
@@ -108,25 +138,25 @@
         </div>
         <div id="netport" style="display: none; width: 100%">
             <div class="row" style="margin-top: 60px; margin-right: 0px;">
-                <div class="col-md-3" style="text-align: center; float: left; padding-right: 0px;">
+                <div class="col-lg-3" style="text-align: center; float: left; padding-right: 0px;">
                     <img src="Placeholder.jpg" alt="Placeholder" style="height: 200px; margin-left: auto; margin-right: auto; margin-bottom: 5px;">
                     <p id="portinfo" style="color: #970000; font-size: 25px;">Placeholder</p>
                     <p id="portinfo" style="color: #d40000; font-size: 22px;">Placeholder</p>
                     <p id="portinfo" style="color: black; font-size: 20px;"><a href="">Placeholder Link</a></p>
                 </div>
-            <div class="col-md-3" style="text-align: center; float: left; padding-right: 0px;">
+            <div class="col-lg-3" style="text-align: center; float: left; padding-right: 0px;">
                     <img src="Placeholder.jpg" alt="Placeholder" style="height: 200px; margin-left: auto; margin-right: auto; margin-bottom: 5px;">
                     <p id="portinfo" style="color: #970000; font-size: 25px;">Placeholder</p>
                     <p id="portinfo" style="color: #d40000; font-size: 22px;">Placeholder</p>
                     <p id="portinfo" style="color: black; font-size: 20px;"><a href="">Placeholder Link</a></p>
                 </div>
-            <div class="col-md-3" style="text-align: center; float: left; padding-right: 0px;">
+            <div class="col-lg-3" style="text-align: center; float: left; padding-right: 0px;">
                     <img src="Placeholder.jpg" alt="Placeholder" style="height: 200px; margin-left: auto; margin-right: auto; margin-bottom: 5px;">
                     <p id="portinfo" style="color: #970000; font-size: 25px;">Placeholder</p>
                     <p id="portinfo" style="color: #d40000; font-size: 22px;">Placeholder</p>
                     <p id="portinfo" style="color: black; font-size: 20px;"><a href="">Placeholder Link</a></p>
                 </div>
-            <div class="col-md-3" style="text-align: center; float: left; padding-right: 0px;">
+            <div class="col-lg-3" style="text-align: center; float: left; padding-right: 0px;">
                     <img src="Placeholder.jpg" alt="Placeholder" style="height: 200px; margin-left: auto; margin-right: auto; margin-bottom: 5px;">
                     <p id="portinfo" style="color: #970000; font-size: 25px;">Placeholder</p>
                     <p id="portinfo" style="color: #d40000; font-size: 22px;">Placeholder</p>
@@ -135,56 +165,39 @@
             </div>
         </div>
         <div id="hist" style="display: none; width: 100%">
-            <div class="row" style="margin-top: 40px; margin-right: 0px;">
-                <div class="col-md-6" style="text-align: center; float: left; padding-right: 0px;">
-                    <div class="histcontainer">
-                        <img src="EClogoWeb.jpg" alt="Avatar" style="width:90px">
-                        <p><span>Elms College:</span> Bachelors in Computer Science (August 2015 - December 2018)</p>
-                        <p>Graduated with a Computer Science degree from Elms College.</p>
-                    </div>
-                </div>
-                <div class="col-md-6" style="text-align: center; float: left; padding-right: 0px;">
-                    <div class="histcontainer">
-                        <img src="EClogoWeb.jpg" alt="Avatar" style="width:90px">
-                        <p><span>Elms College:</span> Computer Lab Monitor (August 2016 - December 2018)</p>
-                        <p>Worked as a lab monitor for the IT computer lab in the Lyons Center. Responsibilities included maintaining the computers, running updates, installing necessary programs, and debugging computer issues.</p>
-                    </div>
-                </div>
+
+            <div class="histcontainer" style="margin-top: 60px;">
+                <img src="EClogoWeb.jpg" alt="Avatar" style="width:90px">
+                <p><span>Elms College:</span> Bachelors in Computer Science (August 2015 - December 2018)</p>
+                <p>Graduated with a Computer Science degree from Elms College.</p>
             </div>
-            <div class="row" style="margin-right: 0px;">
-                <div class="col-md-6" style="text-align: center; float: left; padding-right: 0px;">
-                    <div class="histcontainer">
-                        <img src="EClogoWeb.jpg" alt="Avatar" style="width:90px">
-                        <p><span>Elms College:</span> Web Designer Intern (May 2017 - August 2017)</p>
-                        <p>Worked on several websites for nonprofit organizations and other clients. Other responsibilities included installing new computers in the lab, running updates, and working with others to create clean responsive sites.</p>
-                    </div>
-                </div>
-                <div class="col-md-6" style="text-align: center; float: left; padding-right: 0px;">
-                    <div class="histcontainer">
-                        <img src="EClogoWeb.jpg" alt="Avatar" style="width:90px">
-                        <p><span>Elms College:</span> Web Content Manager Intern (June 2017 - August 2017)</p>
-                        <p>Worked on the Elms College website, reorganizing and updating information, as well as making the site more responsive.</p>
-                    </div>
-                </div>
+            <div class="histcontainer">
+                <img src="EClogoWeb.jpg" alt="Avatar" style="width:90px">
+                <p><span>Elms College:</span> Computer Lab Monitor (August 2016 - December 2018)</p>
+                <p>Worked as a lab monitor for the IT computer lab in the Lyons Center. Responsibilities included maintaining the computers, running updates, installing necessary programs, and debugging computer issues.</p>
             </div>
-            <div class="row" style="margin-right: 0px;">
-                <div class="col-md-6" style="text-align: center; float: left; padding-right: 0px;">
-                    <div class="histcontainer">
-                        <img src="meghanslight.png" alt="Avatar" style="width:90px">
-                        <p><span>Meghan's Light:</span> Web Content Manager (June 2017 - Current)</p>
-                        <p>Meghan’s Light is a charity organization that raises awareness for Cystic Fibrosis. I manage the content on their website whenever new events or news come up. Hosted with Wordpress.</p>
-                    </div>
-                </div>
-                <div class="col-md-6" style="text-align: center; float: left; padding-right: 0px;">
-                </div>
+            <div class="histcontainer">
+                <img src="EClogoWeb.jpg" alt="Avatar" style="width:90px">
+                <p><span>Elms College:</span> Web Designer Intern (May 2017 - August 2017)</p>
+                <p>Worked on several websites for nonprofit organizations and other clients. Other responsibilities included installing new computers in the lab, running updates, and working with others to create clean responsive sites.</p>
+            </div>
+            <div class="histcontainer">
+                <img src="EClogoWeb.jpg" alt="Avatar" style="width:90px">
+                <p><span>Elms College:</span> Web Content Manager Intern (June 2017 - August 2017)</p>
+                <p>Worked on the Elms College website, reorganizing and updating information, as well as making the site more responsive.</p>
+            </div>
+            <div class="histcontainer">
+                <img src="meghanslight.png" alt="Avatar" style="width:90px">
+                <p><span>Meghan's Light:</span> Web Content Manager (June 2017 - Current)</p>
+                <p>Meghan’s Light is a charity organization that raises awareness for Cystic Fibrosis. I manage the content on their website whenever new events or news come up. Hosted with Wordpress.</p>
             </div>
         </div>
         <div id="bio" style="display: none; width: 100%">
             <div class="row" style="margin-top: 60px; margin-right: 0px;">
-                <div class="col-md-4" style="text-align: center; float: left;">
+                <div class="col-lg-4" style="text-align: center; float: left;">
                     <img src="Placeholder.jpg" style="display: block; height: 400px; margin: auto;">
                 </div>
-                <div class="col-md-8" style="text-align: center; float: left;">
+                <div class="col-lg-8" style="text-align: center; float: left;">
                     <h1>Who am I?</h1>
                     <p id="biobody">An aspriring web designer, programmer, network administrator, system administrator. I am all of these things. I believe in a well-rounded philosophy when it comes to my education and skills. I primarily specialize in network administration and web design.</p>
                     <p id="biobody">I am incredibly felxible and I enjoy learning new skills that I can use in my field of work. I am currently working as an independent web designer and content manager while I finish my Computer Science degree at Elms College.</p>
@@ -216,7 +229,7 @@
                     <li class="port"><h3>Portfolio</h3></li>
                     <li class="port"></li>
                     <li class="port" onclick="openNavWeb()"><i class="icon-desktop icon-2x"></i><span>Web</span></li>
-                    <li class="port" onclick="openNavProg()"><i class="icon-file-alt icon-2x"></i><span>Programs</span></li>
+                    <li class="port" onclick="openNavProg()"><i class="icon-file-alt icon-2x"></i><span>Programming</span></li>
                     <li class="port" onclick="openNavNet()"><i class="icon-sitemap icon-2x"></i><span>Networks</span></li>
                     <li class="port"></li>
                     <li class="port"></li>
@@ -257,7 +270,7 @@
                         <h3>Contact</h3>
                         <h3 style="font-size: 13px;">wadhams.tom@gmail.com</h3>
                     </li>
-                    <li class="contact"></li>
+                    <li class="contact"><i class="icon-envelope icon-2x" onclick="openmodal()"></i><span>Email Me!</span></li>
                     <li class="contact"><a id="cubelink" href="https://github.com/wadhamst" target="_blank"><i class="icon-github-alt icon-2x"></i><span>Github</span></a></li>
                     <li class="contact"><a id="cubelink" href="https://twitter.com/wadhams_tom" target="_blank"><i class="icon-twitter icon-2x"></i><span>Twitter</span></a></li>
                     <li class="contact"><a id="cubelink" href="https://www.linkedin.com/in/thomas-wadhams-51a6b5158/" target="_blank"><i class="icon-linkedin icon-2x"></i><span>LinkedIn</span></a></li>
