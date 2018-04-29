@@ -67,9 +67,24 @@
     <!-- Modal content -->
         <div class="modal-content" id="hiddenmodal">
             <i class="fas fa-times icon-2x" onclick="closemodal()"></i>
-            <iframe allowTransparency="true" style="min-height:740px; height:inherit; overflow:auto;" width="100%" id="contactform123" name="contactform123" marginwidth="0" marginheight="0" frameborder="0" src="http://www.123formbuilder.com/my-contact-form-3681188.html">
-                <p>Your browser does not support iframes. The contact form cannot be displayed. Please use another contact method (phone, fax etc)</p>
-            </iframe>
+            <form name="contactform" method="post" action="send_form_email.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="first_name" placeholder="Your name.." style="width: 25%;">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="last_name" placeholder="Your last name.." style="width: 25%;">
+
+                <label for="email">Your Email</label>
+                <input type="text" id="email" name="email" placeholder="youremail@yourdomain.com">
+                
+                <label for="telephone">Your Phone Number</label>
+                <input type="text" id="telephone" name="telephone" placeholder="### ### ####">
+
+                <label for="comments">Subject</label>
+                <textarea id="comments" name="comments" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
         </div>
 
     </div>
