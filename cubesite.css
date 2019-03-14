@@ -442,7 +442,11 @@ h3 {
     padding: 20px;
     border: 1px solid #888;
     width: 50%;
+<<<<<<< HEAD
     transition: 0.5s;
+=======
+    transition: 1s;
+>>>>>>> 29da141e39578740bdbdb8e914b0e40f90126936
 }
 
 #showmodal {
@@ -455,7 +459,11 @@ h3 {
     padding: 20px;
     border: 1px solid #888;
     width: 50%;
+<<<<<<< HEAD
     transition: 0.5s;
+=======
+    transition: 1s;
+>>>>>>> 29da141e39578740bdbdb8e914b0e40f90126936
     transform-style: preserve-3d;
     -moz-transform: rotateY(90deg);
     -ms-transform: rotateY(90deg);
@@ -502,6 +510,7 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: #45a049;
+<<<<<<< HEAD
 }
 
 /* Skill Bars */
@@ -522,3 +531,6 @@ input[type=submit]:hover {
 .eighty {width: 80%; background-color: #d40000;}
 .seventy {width: 65%; background-color: #ff0000;}
 .sixty {width: 60%; background-color: #ff3434;}
+=======
+}
+>>>>>>> 29da141e39578740bdbdb8e914b0e40f90126936

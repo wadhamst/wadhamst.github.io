@@ -70,6 +70,22 @@
         function modalvanish(){
             document.getElementById('myModal').style.display = "none";
         }
+
+        // When the user clicks the button, open the modal 
+        function openmodal() {
+            document.getElementById('myModal').style.display = "block";
+            document.getElementById("hiddenmodal").id = "showmodal";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        function closemodal() {
+            document.getElementById("showmodal").id = "hiddenmodal";
+            setTimeout(modalvanish, 1000);
+        }
+        
+        function modalvanish(){
+            document.getElementById('myModal').style.display = "none";
+        }
     </script>
 </head>
 <body>
@@ -147,6 +163,7 @@
                     <p id="portinfo" style="color: black; font-size: 20px;"><a href="http://elms.readyhosting.com/classes/Web%20Programming/2017/Tom/voltorbflip.html">Click Here!</a></p>
                 </div>
             <div class="col-lg-3" style="text-align: center; float: left; padding-right: 0px;">
+<<<<<<< HEAD
                     <img src="Adventure.PNG" alt="Placeholder" style="height: 200px; width: 100%; margin-left: auto; margin-right: auto; margin-bottom: 5px;">
                     <p id="portinfo" style="color: #970000; font-size: 25px;">Text-Based Adventure</p>
                     <p id="portinfo" style="color: #d40000; font-size: 22px;">Intro to C# Final</p>
@@ -157,6 +174,18 @@
                     <p id="portinfo" style="color: #970000; font-size: 25px;">Linux Shell Employee Script</p>
                     <p id="portinfo" style="color: #d40000; font-size: 22px;">System Administration Final</p>
                     <p id="portinfo" style="color: black; font-size: 20px;"><a href=""></a></p>
+=======
+                    <img src="Placeholder.jpg" alt="Placeholder" style="height: 200px; margin-left: auto; margin-right: auto; margin-bottom: 5px;">
+                    <p id="portinfo" style="color: #970000; font-size: 25px;">Placeholder</p>
+                    <p id="portinfo" style="color: #d40000; font-size: 22px;">Placeholder</p>
+                    <p id="portinfo" style="color: black; font-size: 20px;"><a href="">Placeholder Link</a></p>
+                </div>
+            <div class="col-lg-3" style="text-align: center; float: left; padding-right: 0px;">
+                    <img src="Placeholder.jpg" alt="Placeholder" style="height: 200px; margin-left: auto; margin-right: auto; margin-bottom: 5px;">
+                    <p id="portinfo" style="color: #970000; font-size: 25px;">Placeholder</p>
+                    <p id="portinfo" style="color: #d40000; font-size: 22px;">Placeholder</p>
+                    <p id="portinfo" style="color: black; font-size: 20px;"><a href="">Placeholder Link</a></p>
+>>>>>>> 29da141e39578740bdbdb8e914b0e40f90126936
                 </div>
             <div class="col-lg-3" style="text-align: center; float: left; padding-right: 0px;">
                     <img src="Placeholder.jpg" alt="Placeholder" style="height: 200px; margin-left: auto; margin-right: auto; margin-bottom: 5px;">
@@ -225,7 +254,11 @@
         <div id="bio" style="display: none; width: 100%">
             <div class="row" style="margin-top: 60px; margin-right: 0px;">
                 <div class="col-lg-4" style="text-align: center; float: left;">
+<<<<<<< HEAD
                     <img src="profile.JPG" style="display: block; height: 400px; margin: auto;">
+=======
+                    <img src="Placeholder.jpg" style="display: block; height: 400px; margin: auto;">
+>>>>>>> 29da141e39578740bdbdb8e914b0e40f90126936
                 </div>
                 <div class="col-lg-8" style="text-align: center; float: left;">
                     <h1>Who am I?</h1>
