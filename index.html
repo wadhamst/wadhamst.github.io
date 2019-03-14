@@ -38,6 +38,10 @@
             document.getElementById("window").style.height = "70vh";
             document.getElementById("programs").style.display = "inline";
         }
+        function openMisc() {
+            document.getElementById("window").style.height = "70vh";
+            document.getElementById("miscskill").style.display = "inline";
+        }
         
         function closeNav() {
             document.getElementById("window").style.height = "0";
@@ -48,6 +52,7 @@
             document.getElementById("bio").style.display = "none";
             document.getElementById("skills").style.display = "none";
             document.getElementById("programs").style.display = "none";
+            document.getElementById("miscskill").style.display = "none";
         }
 
         // When the user clicks the button, open the modal 
@@ -291,6 +296,26 @@
                 <div class="col-lg-2" style="text-align: center; float: left;"></div>
             </div>
         </div>
+        <div id="miscskill" style="display: none; width: 100%">
+            <div class="row" style="margin-top: 60px;">
+                <div class="col-lg-2" style="text-align: center; float: left;"></div>
+                <div class="col-lg-8" style="text-align: center; float: left;">
+                    <h1 style="font-size: 30px; margin-bottom: -15px;">Computer Installation</h1>
+                    <div class="skillcontainer">
+                        <div class="skills ninety">90%</div>
+                    </div>
+                    <h1 style="font-size: 30px; margin-bottom: -15px;">Computer Building</h1>
+                    <div class="skillcontainer">
+                        <div class="skills eighty">80%</div>
+                    </div>
+                    <h1 style="font-size: 30px; margin-bottom: -15px;">Circuitry and Soldering</h1>
+                    <div class="skillcontainer">
+                        <div class="skills seventy">70%</div>
+                    </div>
+                </div>
+                <div class="col-lg-2" style="text-align: center; float: left;"></div>
+            </div>
+        </div>
     </div>
     
     <nav id="nav" role='navigation'>
@@ -344,7 +369,7 @@
                     <li class="exp"></li>
                     <li class="exp" onclick="openProg()"><i class="fas fa-cogs icon-2x"></i><span>Program Experience</span></li>
                     <li class="exp" onclick="openSkill()"><i class="far fa-check-square icon-2x"></i><span>Programming Languages</span></li>
-                    <li class="exp"></li>
+                    <li class="exp" onclick="openMisc()"><i class="fas fa-random icon-2x"></i><span>Other Skills</span></li>
                     <li class="exp"></li>
                 </ul>
             </li>
